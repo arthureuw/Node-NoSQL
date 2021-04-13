@@ -7,7 +7,7 @@ const MissionSchema = new schema({
     duration: {type: Number, min: 0},
     salary: {type: Number, min: 0},
     skills: [{type: mongoose.Schema.Types.ObjectId, ref: 'skill'}],
-    ownerId: {type: mongoose.Schema.Types.ObjectId, ref: 'owner'},
+    ownerId: {type: mongoose.Schema.Types.ObjectId, ref: 'user'},
     createdAt: {type: Date, required: true, default: Date.now}
 });
 
