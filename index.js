@@ -1,21 +1,17 @@
-const express=require('express')
-const cors=require('cors')
-const app=express()
+const express = require('express')
+const cors = require('cors')
+const app = express()
 
-const connectDB=require('./config/connectDB')
+const connectDB = require('./config/connectDB')
 
-//middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors());
 
-//connectDB (config)
 connectDB()
 
-app.use('/skills',require('./routes/SkillController'))
+app.use('/skills', require('./routes/SkillController'))
+app.use('/missions', require('./routes/MissionController'))
+app.use('/users', require('./routes/UserController'))
 
-
-
-
-//run server
-const port=process.env.PORT||5000
-app.listen(port,err=>err?console.log(err):console.log(`connected on port ${port}`))
+const port = process.env.PORT || 5000
+app.listen(port, err => err ? console.log(err) : console.log(`connected on port ${port}`))
