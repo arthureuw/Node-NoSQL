@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "60759e55a46f810d546d651d"
+  },
+  "name": "Dev Web",
+  "location": "Lyon",
+  "duration": 5,
+  "salary": 2500,
+  "skills": [
+    {
+      "$oid": "6075951ba46f810d546d6513"
+    },
+    {
+      "$oid": "6075952ea46f810d546d6515"
+    }
+  ],
+  "ownerId": [
+    {
+      "$oid": "60759edea46f810d546d651e"
+    }
+  ],
+  "desc": "Nous cherchons un développeur Elixir / Phoenix / React / GraphQL avec un goût prononcé pour le front-end."
+},{
+  "_id": {
+    "$oid": "60759f25a46f810d546d651f"
+  },
+  "name": "Dev Logiciel",
+  "location": "Paris",
+  "duration": 5,
+  "salary": 2500,
+  "skills": [
+    {
+      "$oid": "6075951ba46f810d546d6513"
+    },
+    {
+      "$oid": "6075952ea46f810d546d6515"
+    }
+  ],
+  "ownerId": [],
+  "desc": "Nous cherchons un développeur Javascript / React / GraphQL avec un goût prononcé pour le front-end."
+}]

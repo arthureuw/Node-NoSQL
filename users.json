@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "60759edea46f810d546d651e"
+  },
+  "name": "Jean",
+  "mail": "jean@jak.com",
+  "avatar": "photo1",
+  "age": 45,
+  "bookmarks": [
+    {
+      "$oid": "60759f25a46f810d546d651f"
+    }
+  ],
+  "oldest": []
+}]
