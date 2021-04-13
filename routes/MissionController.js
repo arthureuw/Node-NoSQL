@@ -14,7 +14,7 @@ router.post("/", (req, res) => {
     const newMission = new Mission({
         name, location, duration, salary, desc, skills, ownerId
     })
-    newMission.save() // du mongoose
+    newMission.save()
         .then(missions => res.send(missions))
         .catch(err => console.log(err))
 })

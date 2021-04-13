@@ -14,7 +14,7 @@ router.post("/", (req, res) => {
     const newSkill = new Skill({
         name
     })
-    newSkill.save() // du mongoose
+    newSkill.save()
         .then(skills => res.send(skills))
         .catch(err => console.log(err))
 })

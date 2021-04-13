@@ -14,7 +14,7 @@ router.post("/", (req, res) => {
     const newUser = new User({
         name, mail, avatar, age, bookmarks, oldest
     })
-    newUser.save() // du mongoose
+    newUser.save()
         .then(users => res.send(users))
         .catch(err => console.log(err))
 })
