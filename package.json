@@ -1,0 +1,24 @@
+{
+  "name": "Node-NoSQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:arthureuw/Node-NoSQL.git",
+  "author": "Arthur <arthureuw@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently  \"npm run server\"   \"npm run client\" "
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
