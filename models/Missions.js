@@ -6,15 +6,9 @@ const MissionSchema = new schema({
     location: {type: String},
     duration: {type: Number, min: 0},
     salary: {type: Number, min: 0},
-    ownerId : [
-        {type: mongoose.Schema.Types.ObjectId,ref:'owner'}
-    ],
+    skills: [{type: mongoose.Schema.Types.ObjectId, ref: 'skill'}],
+    ownerId: {type: mongoose.Schema.Types.ObjectId, ref: 'owner'},
     createdAt: {type: Date, required: true, default: Date.now}
 });
 
 module.exports = mongoose.model('mission', MissionSchema)
-
-
-// skills []
-// ownerId
-
