@@ -11,7 +11,7 @@ app.use(cors())
 //connectDB (config)
 connectDB()
 
-app.use("/contacts",require('./routes/contact'))
+// app.use("/contacts",require('./routes/contact'))
 
 
 
