@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const schema = mongoose.Schema;
 
-const Skills = new schema({
+const SkillSchema = new schema({
     name: {
         type: String,
         required: true,
@@ -9,4 +9,4 @@ const Skills = new schema({
     },
 });
 
-module.exports = mongoose.model('skill', Skills)
+module.exports = mongoose.model('skill', SkillSchema)
